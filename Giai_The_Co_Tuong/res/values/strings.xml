@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">"Giải Thế Cờ Tướng "</string>
-    <string name="hello_world">Phone</string>
+    <string name="textViewPhone">Phone: </string>
+    <string name="textViewPhoneHint">Your Phone</string>
 
 </resources>
