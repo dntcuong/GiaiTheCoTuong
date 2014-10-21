@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">"Giải Thế Cờ Tướng "</string>
-    <string name="textViewPhone">Phone: </string>
-    <string name="textViewPhoneHint">Your Phone</string>
+    <string name="MainScreenButtonPlay">Play</string>
+	<string name="MainScreenButtonFaceBoog">Connect</string>
+    
 
 </resources>
