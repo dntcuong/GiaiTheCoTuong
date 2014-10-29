@@ -3,9 +3,10 @@
 
     <string name="app_name">"Giải Thế Cờ Tướng "</string>
     <string name="MenuScreenButtonPlay">Play</string>
-    <string name="MenuScreenButtonFaceBook">Connect</string>
+    <string name="MenuScreenButtonFaceBook">Connect Facebook</string>
     <string name="title_activity_menu">Game Menu</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_play">PlayActivity</string>
 
 </resources>

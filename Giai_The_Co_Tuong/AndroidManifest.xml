@@ -28,6 +28,10 @@
             android:name=".MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
+        <activity
+            android:name=".PlayActivity"
+            android:label="@string/title_activity_play" >
+        </activity>
     </application>
 
 </manifest>

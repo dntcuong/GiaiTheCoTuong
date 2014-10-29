@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,29 +6,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    style="android:attr/buttonBarStyle"
+    android:orientation="vertical"
     tools:context="com.kloesen.giaithe.MenuActivity" >
 
     <Button
-        android:id="@+id/menuactivity_connectFaceBookButton"
+        android:id="@+id/menuactivity_buttonPlay"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"
-        android:text="@string/MenuScreenButtonFaceBook" 
-        android:background="@drawable/myshapre"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:text="@string/MenuScreenButtonPlay"
+        android:background="@drawable/myshapre" 
+        style="?android:attr/buttonBarButtonStyle"
+        android:onClick="buttonPlayActionPerform"
         />
 
     <Button
-        android:id="@+id/menuactivity_buttonPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/menuactivity_connectFaceBookButton"
-        android:layout_alignLeft="@+id/menuactivity_connectFaceBookButton"
-        android:layout_alignRight="@+id/menuactivity_connectFaceBookButton"
-        android:layout_marginBottom="80dp"
-        android:text="@string/MenuScreenButtonPlay"
-        android:background="@drawable/myshapre" 
-        />
+        android:id="@+id/menuactivity_connectFaceBookButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/myshapre"
+        android:text="@string/MenuScreenButtonFaceBook" />
     
-</RelativeLayout>
+</LinearLayout>
