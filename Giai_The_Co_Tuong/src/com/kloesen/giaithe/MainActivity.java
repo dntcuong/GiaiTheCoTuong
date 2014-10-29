@@ -12,14 +12,34 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Thread background = new Thread() {
+            public void run() {
+                 
+                try {
+                    // Thread will sleep for 5 seconds
+                    sleep(3*1000);
+                     
+                    // After 5 seconds redirect to another intent
+                    Intent i=new Intent(getBaseContext(),MenuActivity.class);
+                    startActivity(i);
+                     
+                    //Remove activity
+                    finish();
+                     
+                } catch (Exception e) {
+                 
+                }
+            }
+        };
 		
-		Intent intentSend = new Intent(MainActivity.this, MenuActivity.class);
-		startActivity(intentSend);
+        background.start();
+        
 	}
+	
+	@Override
+    protected void onDestroy() {
+         
+        super.onDestroy();
+         
+    }
 }
