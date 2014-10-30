@@ -10,12 +10,13 @@
     android:orientation="vertical"
     tools:context="com.kloesen.giaithe.MenuActivity" >
 
-    <Button
+  
+        <Button
         android:id="@+id/menuactivity_buttonPlay"
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="200dp"
         android:text="@string/MenuScreenButtonPlay"
         android:background="@drawable/myshapre" 
         style="?android:attr/buttonBarButtonStyle"
