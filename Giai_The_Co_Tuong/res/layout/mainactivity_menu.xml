@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="com.kloesen.giaithe.MenuActivity" >
+    tools:context="com.kloesen.giaithe.MainActivity" >
 
     <LinearLayout
         android:id="@+id/menuActivity_Line_1"
