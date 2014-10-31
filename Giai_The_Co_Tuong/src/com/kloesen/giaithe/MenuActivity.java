@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MenuActivity extends Activity {
 
@@ -37,9 +38,6 @@ public class MenuActivity extends Activity {
 	}
 	
 	
-	
-	
-	
 	public void buttonPlayActionPerform(View v){
 		
 		Button buttonPlay = (Button) findViewById(R.id.menuactivity_buttonPlay);
@@ -49,4 +47,10 @@ public class MenuActivity extends Activity {
 		Intent i=new Intent(getBaseContext(),PlayActivity.class);
         startActivity(i);
 	}
+	
+	public void onClickButton(View v) {
+		 
+		Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT).show();
+	}
+	
 }

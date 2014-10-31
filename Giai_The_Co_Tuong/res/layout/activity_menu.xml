@@ -5,68 +5,81 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
- 
     tools:context="com.kloesen.giaithe.MenuActivity" >
 
     <LinearLayout
         android:id="@+id/menuActivity_Line_1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
         android:layout_weight="0.5"
         android:orientation="horizontal" 
+        android:gravity="center"
         android:background="#80ff0000">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:id="@+id/menuActivity_ImageViewCoin"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
+            
             android:contentDescription="@string/empty"
             android:src="@drawable/coin" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:contentDescription="@string/empty"
-            android:src="@drawable/buy" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+        <Button
+            android:id="@+id/menuActivity_ImageButtonBuy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:contentDescription="@string/empty"
-            android:src="@drawable/info" />
+            android:background="@drawable/buy"  
+            android:onClick="onClickButton" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+        <Button
+            android:id="@+id/menuActivity_ImageButtonInfo"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:contentDescription="@string/empty"
-            android:src="@drawable/help" />
+            android:background="@drawable/info"  
+            android:onClick="onClickButton" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+        <Button
+            android:id="@+id/menuActivity_ImageButtonHelp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:contentDescription="@string/empty"
-            android:src="@drawable/settings" />
+            android:background="@drawable/help" 
+            android:onClick="onClickButton" />
+
+        <Button
+            android:id="@+id/menuActivity_ImageButtonSetting"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/empty"
+            android:background="@drawable/settings" 
+            android:onClick="onClickButton" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,11 +88,12 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="2"
+        android:gravity="center"
         android:orientation="vertical" >
 
         <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
             android:src="@drawable/heo_cartoon" />
     </LinearLayout>
@@ -90,16 +104,16 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
+        android:gravity="center"
         android:orientation="vertical" >
 
         <Button
             android:id="@+id/menuactivity_buttonPlay"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
             android:background="@drawable/menuactivity_buttonplay"
+            android:contentDescription="@string/MenuScreenButtonPlay"
             android:onClick="buttonPlayActionPerform" />
     </LinearLayout>
 
@@ -109,15 +123,15 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:gravity="center"
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/menuactivity_connectFaceBookButton"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:contentDescription="@string/MenuScreenButtonFaceBook"
             android:background="@drawable/menuactivity_buttonconnect_fb_press" />
     </LinearLayout>
 
