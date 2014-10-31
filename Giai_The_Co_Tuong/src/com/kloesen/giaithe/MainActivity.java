@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -13,9 +14,18 @@ public class MainActivity extends Activity {
 	
 	@Override
 	public void setContentView(int layoutResID) {
-		// TODO Auto-generated method stub
 		currentViewID = layoutResID;
 		super.setContentView(layoutResID);
+	}
+	@Override
+	public void setContentView(View view) {
+		currentViewID = view.getId();
+		super.setContentView(view);
+	}
+	@Override
+	public void setContentView(View view, LayoutParams params) {
+		currentViewID = view.getId();
+		super.setContentView(view, params);
 	}
 	
 	@Override
