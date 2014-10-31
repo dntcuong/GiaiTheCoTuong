@@ -19,23 +19,22 @@
 
         <ImageView
             android:id="@+id/menuActivity_ImageViewCoin"
-            android:layout_width="280dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            
             android:contentDescription="@string/empty"
             android:src="@drawable/coin" />
 
         <Button
             android:id="@+id/menuActivity_ImageButtonBuy"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:contentDescription="@string/empty"
@@ -45,10 +44,10 @@
         <Button
             android:id="@+id/menuActivity_ImageButtonInfo"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:contentDescription="@string/empty"
@@ -58,12 +57,10 @@
         <Button
             android:id="@+id/menuActivity_ImageButtonHelp"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:contentDescription="@string/empty"
             android:background="@drawable/help" 
             android:onClick="onClickButton" />
@@ -71,12 +68,10 @@
         <Button
             android:id="@+id/menuActivity_ImageButtonSetting"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
             android:contentDescription="@string/empty"
             android:background="@drawable/settings" 
             android:onClick="onClickButton" />
@@ -92,8 +87,8 @@
         android:orientation="vertical" >
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/heo_cartoon" />
     </LinearLayout>
@@ -114,7 +109,7 @@
             android:layout_height="50dp"
             android:background="@drawable/menuactivity_buttonplay"
             android:contentDescription="@string/MenuScreenButtonPlay"
-            android:onClick="buttonPlayActionPerform" />
+            android:onClick="onClickButton" />
     </LinearLayout>
 
     <LinearLayout
