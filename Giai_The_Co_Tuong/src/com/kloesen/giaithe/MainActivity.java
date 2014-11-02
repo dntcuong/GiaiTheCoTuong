@@ -53,6 +53,20 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
+	long lastBackPressedTime;
+	public void checkBackPressedAndExit(){
+		
+		long currentTime = System.currentTimeMillis();
+		
+		if(currentTime - lastBackPressedTime > 5000){
+	        Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_LONG).show();
+	        lastBackPressedTime = currentTime;
+	    }else{
+	        super.onBackPressed();
+	    }
+		
+	}
+	
 	@Override
 	public void onBackPressed() {
 
@@ -62,7 +76,7 @@ public class MainActivity extends Activity {
 			break;
 
 		default:
-			super.onBackPressed();
+			checkBackPressedAndExit();
 			break;
 		}
 		
@@ -75,8 +89,10 @@ public class MainActivity extends Activity {
 			v.setBackgroundResource(R.drawable.menuactivity_buttonplay_press);
 			setContentView(R.layout.mainactivity_play);
 	        v.setBackgroundResource(R.drawable.menuactivity_buttonplay);
+		//}else if (v.getId() == R.id.menuActivity_ImageButtonBuy) {
+		//	Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT).show();
 		}else{
-			Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "This function is in progress and coming soon!", Toast.LENGTH_SHORT).show();
 		}
 	}
 	

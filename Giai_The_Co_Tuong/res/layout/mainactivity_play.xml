@@ -1,11 +1,196 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/FrameLayout1"
+    android:id="@+id/MainActivity_play"
+    style="android:attr/buttonBarStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.kloesen.giaithe.MainActivity"
-    >
+    android:orientation="vertical"
+    tools:context="com.kloesen.giaithe.MainActivity" >
 
+    <LinearLayout
+        android:id="@+id/menuActivity_Line_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:background="#80ff0000"
+        android:gravity="center"
+        android:orientation="horizontal" >
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/menuActivity_ImageViewCoin"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/coin"
+            android:contentDescription="@string/empty" />
+
+        <Button
+            android:id="@+id/menuActivity_ImageButtonBuy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buy"
+            android:contentDescription="@string/empty"
+            android:onClick="onClickButton" />
+
+        <Button
+            android:id="@+id/menuActivity_ImageButtonInfo"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/info"
+            android:contentDescription="@string/empty"
+            android:onClick="onClickButton" />
+
+        <Button
+            android:id="@+id/menuActivity_ImageButtonHelp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/help"
+            android:contentDescription="@string/empty"
+            android:onClick="onClickButton" />
+
+        <Button
+            android:id="@+id/menuActivity_ImageButtonSetting"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/settings"
+            android:contentDescription="@string/empty"
+            android:onClick="onClickButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuActivity_play_Stage"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        >
+
+        <Button
+            android:id="@+id/menuactivity_play_Previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Prev"
+            android:textSize="20sp"
+            />
+        
+        <TextView
+            android:id="@+id/menuactivity_play_TextViewAllStage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="stage 9999/9999"
+            android:textSize="20sp"
+            />
+        
+         <Button
+            android:id="@+id/menuactivity_play_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Next"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/menuActivity_play_Move"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/menuactivity_play_TextViewMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="move: 1"
+            android:textSize="20sp"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/menuActivity_Line_2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/heo_cartoon" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/menuActivity_play_helpFromFaceBook"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        >
+
+        <Button
+            android:id="@+id/menuactivity_play_textViewFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/MenuScreenButtonFaceBook" 
+            android:textColor="#ffffff"
+            android:text="Get Help From Facebook"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/menuActivity_play_Banner"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:background="#80000000">
+
+        <TextView
+            android:id="@+id/menuactivity_play_textViewBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/MenuScreenButtonFaceBook" 
+            android:textColor="#ffffff"
+            android:text="Banner Ad"
+            android:textSize="50sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
