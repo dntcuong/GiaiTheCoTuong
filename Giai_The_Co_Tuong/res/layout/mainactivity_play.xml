@@ -85,37 +85,33 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
         android:gravity="center"
-        android:orientation="horizontal" 
-        >
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/menuactivity_play_Previous"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
             android:text="Prev"
-            android:textSize="20sp"
-            />
-        
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/menuactivity_play_TextViewAllStage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
             android:text="stage 9999/9999"
-            android:textSize="20sp"
-            />
-        
-         <Button
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
             android:id="@+id/menuactivity_play_Next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
             android:text="Next"
-            android:textSize="20sp"
-            />
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/menuActivity_play_Move"
         android:layout_width="fill_parent"
@@ -123,74 +119,81 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal" >
+
         <TextView
             android:id="@+id/menuactivity_play_TextViewMove"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
             android:text="move: 1"
-            android:textSize="20sp"
-            />
-        
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/menuActivity_Line_2"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="4"
+        android:background="@drawable/heo_cartoon"
         android:gravity="center"
         android:orientation="vertical" >
 
-        <ImageView
+        <GridView
+            android:id="@+id/chessboard"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/heo_cartoon" />
+            android:background="#ffffff"
+            android:columnWidth="60dp"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="20dp"
+            android:numColumns="8"
+            android:padding="5dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+
+        </GridView>
+        
     </LinearLayout>
 
-     <LinearLayout
+    <LinearLayout
         android:id="@+id/menuActivity_play_helpFromFaceBook"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
         android:gravity="center"
-        android:orientation="horizontal" 
-        >
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/menuactivity_play_textViewFB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/MenuScreenButtonFaceBook" 
-            android:textColor="#ffffff"
+            android:contentDescription="@string/MenuScreenButtonFaceBook"
             android:text="Get Help From Facebook"
-            android:textSize="30sp"
-            />
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/menuActivity_play_Banner"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
+        android:background="#80000000"
         android:gravity="center"
-        android:orientation="horizontal" 
-        android:background="#80000000">
+        android:orientation="horizontal" >
 
         <TextView
             android:id="@+id/menuactivity_play_textViewBanner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/MenuScreenButtonFaceBook" 
-            android:textColor="#ffffff"
+            android:contentDescription="@string/MenuScreenButtonFaceBook"
             android:text="Banner Ad"
-            android:textSize="50sp"
-            />
+            android:textColor="#ffffff"
+            android:textSize="50sp" />
     </LinearLayout>
 
 </LinearLayout>

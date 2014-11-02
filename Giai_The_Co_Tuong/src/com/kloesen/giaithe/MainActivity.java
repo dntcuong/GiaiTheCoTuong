@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.GridView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -58,7 +59,7 @@ public class MainActivity extends Activity {
 		
 		long currentTime = System.currentTimeMillis();
 		
-		if(currentTime - lastBackPressedTime > 5000){
+		if(currentTime - lastBackPressedTime > 3000){
 	        Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_LONG).show();
 	        lastBackPressedTime = currentTime;
 	    }else{
@@ -87,7 +88,7 @@ public class MainActivity extends Activity {
 
 		if (v.getId() == R.id.menuactivity_buttonPlay) {
 			v.setBackgroundResource(R.drawable.menuactivity_buttonplay_press);
-			setContentView(R.layout.mainactivity_play);
+			setContentViewPlayScreen();
 	        v.setBackgroundResource(R.drawable.menuactivity_buttonplay);
 		//}else if (v.getId() == R.id.menuActivity_ImageButtonBuy) {
 		//	Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT).show();
@@ -95,5 +96,15 @@ public class MainActivity extends Activity {
 			Toast.makeText(this, "This function is in progress and coming soon!", Toast.LENGTH_SHORT).show();
 		}
 	}
+	
+	public void setContentViewPlayScreen(){
+		
+		
+		setContentView(R.layout.mainactivity_play);
+		final GridView chessboardGridView =  (GridView)findViewById(R.id.chessboard);
+			  chessboardGridView.setAdapter(new SquareAdapter(this));
+		
+	}
+	
 	
 }
