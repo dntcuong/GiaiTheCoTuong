@@ -98,12 +98,13 @@ public class MainActivity extends Activity {
 	}
 	
 	public void setContentViewPlayScreen(){
-		
-		
+
+
 		setContentView(R.layout.mainactivity_play);
 		final GridView chessboardGridView =  (GridView)findViewById(R.id.chessboard);
-			  chessboardGridView.setAdapter(new SquareAdapter(this));
+		chessboardGridView.setAdapter(new SquareAdapter(this));
 		
+
 	}
 	
 	

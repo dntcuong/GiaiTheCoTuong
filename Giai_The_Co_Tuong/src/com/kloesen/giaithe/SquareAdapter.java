@@ -13,7 +13,7 @@ public class SquareAdapter extends BaseAdapter {
 	private Context context;
 	
 	public SquareAdapter(Activity act) {
-		context = act;
+		context = act.getApplicationContext();
 	}	
 	
 	@Override
@@ -33,37 +33,33 @@ public class SquareAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	@Override
+	
+	/*@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		return null;
-	}
+	}*/
 	
-/*
+
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		View squareContainerView = convertView;
         
 		  if ( convertView == null ) {
 		    //Inflate the layout
-		    final LayoutInflater layoutInflater = 
-		      context.getLayoutInflater();
-		    squareContainerView =  layoutInflater.inflate(R.layout.square, null);
+		    final LayoutInflater layoutInflater = ((Activity) context).getLayoutInflater();
+		    squareContainerView =  layoutInflater.inflate(R.id.square, null);
 
-		    // Background
-		    final ImageView squareView = (ImageView)squareContainerView.findViewById(R.id.square_background);
-		    squareView.setImageResource(this.aSquareImg[(position + position/8)%2]);
-
-		    if (pPosition % 2 == 0) { //mock test
+		    if (position % 2 == 0) { //mock test
 		        // Add The piece
-		        final ImageView pieceView = 
-		          (ImageView)squareContainerView.findViewById(R.id.piece);
-		        pieceView.setImageResource(R.drawable.green);
-		        pieceView.setTag(position);
+		        final ImageView pieceView = (ImageView) squareContainerView.findViewById(R.id.piece);
+		        pieceView.setImageResource(R.drawable.b_soldier);
+		        
+		        squareContainerView.setTag(position);
 		    }
 		  }
 		  return squareContainerView;
 	}
-*/
+
 	
 	
 }

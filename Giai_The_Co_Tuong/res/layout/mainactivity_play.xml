@@ -136,24 +136,22 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="4"
-        android:background="@drawable/heo_cartoon"
         android:gravity="center"
         android:orientation="vertical" >
-
+        
         <GridView
             android:id="@+id/chessboard"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:background="#ffffff"
             android:columnWidth="60dp"
             android:gravity="center_horizontal"
             android:horizontalSpacing="20dp"
-            android:numColumns="8"
+            android:numColumns="9"
             android:padding="5dp"
+            android:verticalSpacing="5dp" 
             android:stretchMode="columnWidth"
-            android:verticalSpacing="5dp" >
-
-        </GridView>
+            android:background="@drawable/gameboard"
+            />
         
     </LinearLayout>
 
